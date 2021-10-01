@@ -8,8 +8,8 @@
 body {
     padding: 30px 139.5px;
 }
-    header ~ * {
-        margin-top: 10px;
+    header ~ *:not(footer) {
+        margin-top: 20px;
     }
 
 .clearfix::after { /* main */
@@ -88,20 +88,20 @@ figure {
             }
 /* Layout main ----------------------------------------------------------- */
 main {
-    background-color: blue;
+    /* background-color: blue; */
 }
     main > div {
-        background-color: lightblue;
+        /* background-color: lightblue; */
     }
     main > div:not(.header-main) {
-        height: 400px;
+        height: 600px;
         float: left;
     }
 /* Inizio main --> header-main ----------------------------------------------------------- */
         .header-main {
-            margin-top: 20px;
             height: 80px;
             position: relative;
+            margin-bottom: 10px;
         }
         .header-main > div {
             position: relative;
@@ -119,11 +119,11 @@ main {
 
 /* Inizio side-main ------------------------------------------------------- */
         [class*="t-main"] { /* lefT, righT */
-            margin: 1% 0;
+            margin: 2% 0;
             width: 20.002%;
         }
                 .figura-sx {
-                    border-radius: 15px;
+                    border-radius: 10px;
                     height: 170px;
                     width: 100%;
                     background-image: url("../img/img-1.jpg");
@@ -131,7 +131,7 @@ main {
                     background-position: 50% 35%;
                 }
                 .figura-dx {
-                    border-radius: 15px;
+                    border-radius: 10px;
                     height: 170px;
                     width: 100%;
                     background-image: url("../img/img-3.jpg");
@@ -142,7 +142,7 @@ main {
                     background-color: rgba(0, 0, 0, 0.3);
                     height: 170px;
                     width: 100%;
-                    border-radius: 15px;
+                    border-radius: 10px;
                 }
                     .sideleft-main p {
                         color: rgb(179, 179, 179);
@@ -153,13 +153,30 @@ main {
 
 
         .main-main {
-            margin: 1%;
-            width: 58%;
+            margin: 2%;
+            width: 56%;
         }
+            .figura-main {
+                border-radius: 10px;
+                width: 100%;
+                height: 170px;
+                background-image: url("../img/banner-2.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            .opaco {
+                background-color: rgba(0, 0, 0, 0.3);
+                height: 170px;
+                width: 100%;
+                border-radius: 10px;
+            }
+            .main-main p {
+                color: rgb(179, 179, 179);
+            }
 
 /* Layout footer --------------------------------------------------------- */
 footer {
-    margin-top: 5px;
     height: 70px;
-    background-color: darkviolet;
+    /* background-color: darkviolet; */
+    text-align: center;
 }
