@@ -6,7 +6,7 @@
     font-family: 'Lato', sans-serif;
 }
 body {
-    padding: 30px 259.5px;
+    padding: 30px 189.5px;
 }
     header ~ * {
         margin-top: 10px;
@@ -66,8 +66,7 @@ figure {
     figure > div{
         border-radius: inherit;
         height: 100%;
-        background-color: rgba(102, 102, 102, 0.329);
-        opacity: 0.7;
+        background-color: rgba(0, 0, 0, 0.3);
         position: relative;
     }
         #text-img {
@@ -83,6 +82,7 @@ figure {
             #text-img > h3 {
                 font-weight: normal;
                 font-size: 30px;
+                
             }
             #text-img > p {
                 font-size: 16px;
