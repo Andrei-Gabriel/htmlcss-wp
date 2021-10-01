@@ -3,11 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 body {
     padding: 30px 149.5px;
 }
-    body :only-of-type:not(header, footer) {
+    header ~ * {
         margin-top: 10px;
     }
 
@@ -19,9 +20,33 @@ body {
 
 /* Layout header --------------------------------------------------------- */
 header {
-    height: 100px;
-    background-color: violet;
+    /* background-color: violet; */
 }
+/* Inizio header --------------------------------------------------------- */
+header #logo {
+    height: 50px;
+    line-height: 50px;
+    padding-right: 7px;
+    border-right: 1px solid lightgrey;
+}
+    nav {
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+    nav > ul {
+        height: 60px;
+        line-height: 60px;
+    }
+    nav li {
+        list-style-type: none;
+        float: left;
+        margin: 0 7px;
+        color: lightgrey;
+    }
+    nav li:first-child {
+        margin-left: 0;
+    }
+
 
 /* Layout figure --------------------------------------------------------- */
 figure {
