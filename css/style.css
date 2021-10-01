@@ -1,0 +1,60 @@
+/* Struttura base -------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 30px 149.5px;
+}
+    body :only-of-type:not(header, footer) {
+        margin-top: 10px;
+    }
+
+.clearfix::after { /* main */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Layout header --------------------------------------------------------- */
+header {
+    height: 100px;
+    background-color: violet;
+}
+
+/* Layout figure --------------------------------------------------------- */
+figure {
+    height: 400px;
+    background-color: khaki;
+}
+
+/* Layout main ----------------------------------------------------------- */
+main {
+    background-color: blue;
+}
+    main div {
+        background-color: lightblue;
+    }
+    main div:not(.header-main) {
+        height: 400px;
+        float: left;
+    }
+        .header-main {
+            height: 80px;
+        }
+        [class*="t-main"] { /* lefT, righT */
+            margin: 10px 0;
+            width: 20%;
+        }
+        .main-main {
+            margin: 10px;
+            width: 610px;
+        }
+
+/* Layout footer --------------------------------------------------------- */
+footer {
+    margin-top: 5px;
+    height: 70px;
+    background-color: darkviolet;
+}
